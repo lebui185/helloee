@@ -20,7 +20,7 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String name = stringService.toUpper("le");
+        String name = stringService.toUpper("le bui");
         req.setAttribute("welcomeMessage", "Hello, " + name);
         RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/WEB-INF/views/home.jsp");
         dispatcher.forward(req, resp);
